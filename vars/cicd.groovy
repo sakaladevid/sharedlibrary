@@ -1,5 +1,5 @@
-def cicd.contDownload(repo)
-{
-  git 'https://github.com/sakaladevid/sharedlibrary.git'
-}
+def ContDownload(repo)
+     {
+            git 'https://github.com/sakaladevid/sharedlibrary.git'
+     }
   
