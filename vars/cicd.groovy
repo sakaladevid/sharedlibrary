@@ -7,9 +7,9 @@ def ContBuild()
       sh 'mvn package'
 }
 
-def ContDeploy(jobname,ip,appname)
+def ContDeploy(jobname,ip,Context)
 {
-    sh "scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.war   ubuntu@${ip}:/var/lib/tomcat9/webapps/${appname}.war"
+    sh "scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.war   ubuntu@${ip}:/var/lib/tomcat9/webapps/${Context}.war"
 }
 
 
